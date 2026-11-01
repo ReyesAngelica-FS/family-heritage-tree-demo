@@ -1,0 +1,133 @@
+
+.members-page {
+    min-height: 100vh;
+    background: #15151e;
+    color: #f5f3ff;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.members-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #414052;
+    margin-bottom: 30px;
+}
+
+.members-header p,
+.members-list p {
+    color: #aaa8bb;
+}
+
+.members-header button,
+.members-save {
+    background: #a78bfa;
+    color: #15151e;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.members-panel {
+    background: #252532;
+    border: 1px solid #414052;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 25px;
+}
+
+.members-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.members-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #d6d2e3;
+}
+
+.members-form input,
+.members-form select,
+.members-form textarea {
+    padding: 12px;
+    background: #343445;
+    border: 1px solid #666177;
+    border-radius: 7px;
+    color: white;
+    font: inherit;
+    min-width: 0;
+}
+
+.members-wide {
+    grid-column: 1 / -1;
+}
+
+.members-save {
+    grid-column: 1 / -1;
+}
+
+.members-save:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.members-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.members-list article {
+    background: #343445;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+    .members-page {
+        padding: 20px;
+    }
+
+    .members-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .members-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Read-only demo styles */
+
+.members-demo-notice {
+    padding: 14px 18px;
+    margin: 16px 0 24px;
+    border: 1px solid rgba(167, 130, 66, 0.35);
+    border-radius: 10px;
+    background: rgba(167, 130, 66, 0.1);
+    color: #e8d6b4;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.member-avatar {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.member-demo-label {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #b6a1c9;
+    font-style: italic;
+}
+

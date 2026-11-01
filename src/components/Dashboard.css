@@ -1,0 +1,92 @@
+
+.dashboard {
+    min-height: 100vh;
+    padding: 40px;
+    background: #15151e;
+    color: #f5f3ff;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #414052;
+    padding-bottom: 24px;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    margin: 0 0 10px;
+}
+
+.dashboard-header p,
+.dashboard-welcome p,
+.dashboard-card p {
+    color: #aaa8bb;
+}
+
+.dashboard-header button {
+    background: #a78bfa;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dashboard-welcome {
+    margin: 45px 0 30px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.dashboard-card {
+    background: #252532;
+    border: 1px solid #414052;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.dashboard-icon {
+    font-size: 32px;
+}
+
+.dashboard-card h3 {
+    margin: 18px 0 8px;
+}
+
+@media (max-width: 650px) {
+    .dashboard {
+        padding: 20px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Portfolio demonstration notice */
+.dashboard-demo-notice {
+    max-width: 680px;
+    margin: 20px auto 0;
+    padding: 14px 20px;
+    background: rgba(167, 130, 66, 0.1);
+    border: 1px solid rgba(167, 130, 66, 0.35);
+    border-radius: 10px;
+    color: #e8d6b4;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}

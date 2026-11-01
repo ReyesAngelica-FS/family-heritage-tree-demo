@@ -1,0 +1,156 @@
+
+.members-page {
+    min-height: 100vh;
+    padding: 40px 6%;
+    background: #141414;
+    color: #f5f0e8;
+}
+
+.members-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.members-header h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 8px 0;
+}
+
+.members-header p {
+    color: #c7c0b7;
+}
+
+.members-eyebrow {
+    color: #c6a36a !important;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.members-back-button {
+    padding: 12px 18px;
+    background: transparent;
+    color: #e8d6b4;
+    border: 1px solid #a78242;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.members-back-button:hover {
+    background: #a78242;
+    color: #141414;
+}
+
+.members-demo-notice {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: rgba(167, 130, 66, 0.1);
+    border: 1px solid rgba(167, 130, 66, 0.4);
+    border-radius: 12px;
+}
+
+.members-demo-notice strong {
+    color: #e8c98c;
+}
+
+.members-demo-notice p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.members-panel {
+    padding: 28px;
+    background: #1e1e1e;
+    border: 1px solid #34302b;
+    border-radius: 14px;
+}
+
+.members-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.members-section-header h2 {
+    margin-bottom: 5px;
+}
+
+.members-section-header p {
+    color: #aaa39a;
+}
+
+.members-count {
+    padding: 8px 14px;
+    background: #342b1e;
+    color: #e8c98c;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.members-list {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    padding: 24px;
+    background: #262626;
+    border: 1px solid #40382d;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.member-avatar {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.member-card h3 {
+    color: #f5f0e8;
+    margin-bottom: 20px;
+}
+
+.member-birthdate {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #c7c0b7;
+}
+
+.member-demo-label {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #e8c98c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.members-error {
+    color: #ff9999;
+}
+
+.members-footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #aaa39a;
+    font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+    .members-header,
+    .members-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .members-page {
+        padding: 24px 16px;
+    }
+}

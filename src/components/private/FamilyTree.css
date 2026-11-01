@@ -1,0 +1,112 @@
+
+.family-tree-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 28px;
+    color: #f5f3ff;
+}
+
+.family-tree-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #3c394b;
+    margin-bottom: 28px;
+}
+
+.family-tree-header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+.family-tree-header p {
+    color: #aaa7bc;
+    margin: 0;
+}
+
+.family-tree-header button {
+    background: #a78bfa;
+    color: #171321;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.family-tree-canvas {
+    height: 650px;
+    width: 100%;
+    border: 1px solid #454155;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #171720;
+}
+
+.tree-person {
+    width: 190px;
+    min-height: 105px;
+    padding: 16px;
+    background: #292837;
+    border: 1px solid #8d76c9;
+    border-radius: 12px;
+    color: #f5f3ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    text-align: center;
+    box-shadow: 0 5px 18px #0004;
+}
+
+.tree-person-icon {
+    font-size: 24px;
+}
+
+.tree-person strong {
+    font-size: 14px;
+}
+
+.tree-person span,
+.tree-person small {
+    color: #b7b0cd;
+    font-size: 12px;
+}
+
+.react-flow__node-person {
+    width: 224px;
+}
+
+.react-flow__controls button {
+    background: #302e40;
+    color: #ffffff;
+    border-color: #514a65;
+    fill: #ffffff;
+}
+
+.react-flow__minimap {
+    background: #252332;
+}
+
+@media (max-width: 650px) {
+    .family-tree-page {
+        padding: 20px 12px;
+    }
+
+    .family-tree-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .family-tree-header h1 {
+        font-size: 28px;
+    }
+
+    .family-tree-canvas {
+        height: 70vh;
+        min-height: 450px;
+    }
+}
